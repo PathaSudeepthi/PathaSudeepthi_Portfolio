@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal portfolio of Patha Sudeepthi — projects, experience, and contact." />
+  <meta name="color-scheme" content="dark light" />
+  <title>Patha Sudeepthi</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <!-- Open Graph / SEO -->
+  <meta property="og:title" content="Patha Sudeepthi" /> 
+  <meta property="og:description" content="Projects, skills, and experience." /> 
+  <meta property="og:type" content="website" /> 
+  <meta property="og:image" content="image.jpg" /> 
+  <meta property="og:url" content="https://example.com" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Accessible skip link -->
+  <a href="#main" class="btn" style="position: absolute; left: -9999px;">Skip to content</a>
+
+  <header role="banner">
+    <div class="container nav" aria-label="Primary">
+      <div class="brand">
+        <div class="brand-logo" aria-hidden="true">PS</div>
+        <span>Patha Sudeepthi</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="themeToggle" class="btn" type="button" aria-pressed="false" aria-label="Toggle theme">🌗</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="intro-title">
+      <div>
+        <p class="kicker">PORTFOLIO</p>
+        <h1 id="intro-title" class="title">Hi, I'm <span class="highlight">PathaSudeepthi</span></h1>
+        <p class="subtitle">I build practical software and hardware solutions as a Front-end Web and Android developer, turning ideas into results.</p>
+        <div class="hero-cta">
+          <a class="btn" href="https://github.com/PathaSudeepthi">View Projects</a>
+          <a class="btn" href="Resume.pdf" download>Download Resume</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="Portfolio.jpg" alt="Patha Sudeepthi" />
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title" class="section-title">About</h2>
+      <p class="section-desc">I design and build thoughtful digital products with a focus on front-end engineering and user experience...</p>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>What I Do</h3>
+          <p class="muted">Front-end, Arduino Projects, Rapid Prototyping.</p>
+        </div>
+        <div class="card">
+          <h3>Currently</h3>
+          <p class="muted">Building modern web apps in HTML/CSS and Arduino Projects</p>
+        </div>
+        <div class="card">
+          <h3>Location</h3>
+          <p class="muted">Hyderabad, India · Open to remote.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title" class="section-title">Skills</h2>
+      <p class="section-desc">Core tools and technologies I use regularly.</p>
+      <div class="card">
+        <div class="chips" aria-label="Skill list">
+          <span class="chip">HTML</span>
+          <span class="chip">CSS</span>
+          <span class="chip">JavaScript</span>
+          <span class="chip">Arduino IDE</span>
+          <span class="chip">Java</span>
+          <span class="chip">DBMS</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Git</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title" class="section-title">Selected Projects</h2>
+      <p class="section-desc">A quick tour of things I loved building.</p>
+      <div class="grid grid-2">
+        <article class="card project">
+          <img src="RestaurantReservation.png" alt="Screenshot of Restaurant Reservation System" />
+          <div>
+            <h3>Restaurant Reservation Management System</h3>
+            <p class="muted">A web-based system that streamlines table bookings...</p>
+            <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span></div>
+            <div class="project-links">
+              <a class="btn" href="https://github.com/PathaSudeepthi/Restaurant_Reservation_Project_-" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project">
+          <img src="Earthquakedetector.jpg" alt="Screenshot of Arduino Project" />
+          <div>
+            <h3>EarthQuake Detector Using Arduino Uno</h3>
+            <p class="muted">Implemented an Earthquake Detector using Arduino Uno...</p>
+            <div class="chips"><span class="chip">Arduino IDE</span><span class="chip">Processing</span></div>
+            <div class="project-links">
+              <a class="btn" href="https://github.com/PathaSudeepthi/EarthQuakeDetectorUsing-ArduinoUNo">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" aria-labelledby="exp-title">
+      <h2 id="exp-title" class="section-title">Experience</h2>
+      <div class="card timeline">
+        <div class="tl-item">
+          <h3>Front-end Web Developer · IBM <span class="muted">(2025 — Present)</span></h3>
+          <p class="muted">Built responsive, user-friendly interfaces...</p>
+        </div>
+        <div class="tl-item">
+          <h3>VLSI Developer · Coincent(Microsoft) <span class="muted">(2023 — 2027)</span></h3>
+          <p class="muted">Designed and implemented image processing algorithms...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" class="section-title">Contact</h2>
+      <p class="section-desc">Have a question? Email <a href="mailto:pathasudeepthi538@gmail.com">pathasudeepthi538@gmail.com</a>.</p>
+      <form name="contact" method="post" onsubmit="handleSubmit(event)">
+        <label><span class="muted">Your name</span><input type="text" name="name" required /></label>
+        <label><span class="muted">Email</span><input type="email" name="email" required /></label>
+        <label><span class="muted">Message</span><textarea name="message" required></textarea></label>
+        <button class="btn" type="submit">Send message</button>
+        <p id="formStatus" class="muted" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div class="footer-links">
+      <span>© <span id="year"></span> Patha Sudeepthi </span>
+      <div>
+        <a class="btn" href="https://github.com/PathaSudeepthi" target="_blank">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/patha-sudeepthi/" target="_blank">LinkedIn</a>
+        <a class="btn" href="mailto:pathasudeepthi538@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
