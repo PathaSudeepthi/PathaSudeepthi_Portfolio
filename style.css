@@ -111,7 +111,7 @@ section { padding: 52px 0; }
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px; /* space between both rows & columns */
+  gap: 30px; /* creates space between project cards */
 }
 
 
@@ -127,17 +127,17 @@ section { padding: 52px 0; }
 
 /* Project card */
 .project {
-  background: #f9fbfc; /* just to see card edges */
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex; /* instead of grid */
+  gap: 16px;     /* space between image and text */
+  align-items: flex-start;
 }
+
 .project img {
   width: 140px;
   height: 100px;
   object-fit: cover;
-  flex-shrink: 0;
-}
+  border-radius: 8px;
+}s
 
 .project-links { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
 
@@ -167,6 +167,7 @@ footer { padding: 36px 0 56px; color: var(--muted); font-size: .95rem; }
   .grid-2 { grid-template-columns: 1fr; }
   .project { grid-template-columns: 1fr; }
 }
+
 
 
 
