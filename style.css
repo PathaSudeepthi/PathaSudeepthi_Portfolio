@@ -114,11 +114,18 @@ section { padding: 52px 0; }
   gap: 30px; /* spacing between project cards */
 }
 .card {
-  background: linear-gradient(180deg, color-mix(in oklab, var(--surface), transparent 5%), color-mix(in oklab, var(--bg), transparent 5%));
-  border: 1px solid color-mix(in oklab, var(--muted), transparent 60%);
-  border-radius: var(--radius);
-  padding: 18px; box-shadow: var(--shadow);
+  background: #f9fbfc;           /* light background */
+  border-radius: 16px;           /* rounded corners */
+  padding: 20px;                 /* inner spacing */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* soft shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
 
 .card h3 { margin: 8px 0 8px; font-size: 1.05rem; }
 .muted { color: var(--muted); }
@@ -170,6 +177,7 @@ footer { padding: 36px 0 56px; color: var(--muted); font-size: .95rem; }
   .grid-2 { grid-template-columns: 1fr; }
   .project { grid-template-columns: 1fr; }
 }
+
 
 
 
