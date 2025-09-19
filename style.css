@@ -111,11 +111,8 @@ section { padding: 52px 0; }
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px; /* creates space between project cards */
+  gap: 30px; /* spacing between project cards */
 }
-
-
-
 .card {
   background: linear-gradient(180deg, color-mix(in oklab, var(--surface), transparent 5%), color-mix(in oklab, var(--bg), transparent 5%));
   border: 1px solid color-mix(in oklab, var(--muted), transparent 60%);
@@ -128,8 +125,8 @@ section { padding: 52px 0; }
 
 /* Project card */
 .project {
-  display: flex; /* instead of grid */
-  gap: 16px;     /* space between image and text */
+  display: flex;
+  gap: 16px;
   align-items: flex-start;
 }
 
@@ -138,13 +135,18 @@ section { padding: 52px 0; }
   height: 100px;
   object-fit: cover;
   border-radius: 8px;
-}s
-
-.project-links { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
-
+  flex-shrink: 0;
+}
+.project-links {
+  margin-top: 12px; /* ensures GitHub button stays below chips */
+}
 /* Skills chips */
-.chips { display: flex; gap: 10px; flex-wrap: wrap; }
-.chip { padding: 6px 10px; border-radius: 999px; border: 1px solid color-mix(in oklab, var(--muted), transparent 55%); background: color-mix(in oklab, var(--surface), transparent 20%); font-size: .9rem; }
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* space between chips */
+  margin: 10px 0;
+}.chip { padding: 6px 10px; border-radius: 999px; border: 1px solid color-mix(in oklab, var(--muted), transparent 55%); background: color-mix(in oklab, var(--surface), transparent 20%); font-size: .9rem; }
 
 /* Timeline */
 .timeline { position: relative; padding-left: 18px; }
@@ -168,6 +170,7 @@ footer { padding: 36px 0 56px; color: var(--muted); font-size: .95rem; }
   .grid-2 { grid-template-columns: 1fr; }
   .project { grid-template-columns: 1fr; }
 }
+
 
 
 
