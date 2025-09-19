@@ -108,52 +108,25 @@ section { padding: 52px 0; }
    ========================= */
 .grid { display: grid; gap: 18px; }
 .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px; /* spacing between project cards */
-}
+.grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
 .card {
-  background: #f9fbfc;           /* light background */
-  border-radius: 16px;           /* rounded corners */
-  padding: 20px;                 /* inner spacing */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* soft shadow */
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: linear-gradient(180deg, color-mix(in oklab, var(--surface), transparent 5%), color-mix(in oklab, var(--bg), transparent 5%));
+  border: 1px solid color-mix(in oklab, var(--muted), transparent 60%);
+  border-radius: var(--radius);
+  padding: 18px; box-shadow: var(--shadow);
 }
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-
 .card h3 { margin: 8px 0 8px; font-size: 1.05rem; }
 .muted { color: var(--muted); }
 
 /* Project card */
-.project {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
-}
+.project { display: grid; grid-template-columns: 140px 1fr; gap: 16px; align-items: start; }
+.project img { width: 140px; height: 100px; object-fit: cover; }
+.project-links { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
 
-.project img {
-  width: 140px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
-}
-.project-links {
-  margin-top: 12px; /* ensures GitHub button stays below chips */
-}
 /* Skills chips */
-.chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px; /* space between chips */
-  margin: 10px 0;
-}.chip { padding: 6px 10px; border-radius: 999px; border: 1px solid color-mix(in oklab, var(--muted), transparent 55%); background: color-mix(in oklab, var(--surface), transparent 20%); font-size: .9rem; }
+.chips { display: flex; gap: 10px; flex-wrap: wrap; }
+.chip { padding: 6px 10px; border-radius: 999px; border: 1px solid color-mix(in oklab, var(--muted), transparent 55%); background: color-mix(in oklab, var(--surface), transparent 20%); font-size: .9rem; }
 
 /* Timeline */
 .timeline { position: relative; padding-left: 18px; }
@@ -172,17 +145,9 @@ footer { padding: 36px 0 56px; color: var(--muted); font-size: .95rem; }
 .footer-links { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
   .grid-3 { grid-template-columns: 1fr; }
   .grid-2 { grid-template-columns: 1fr; }
   .project { grid-template-columns: 1fr; }
 }
-
-
-
-
-
-
-
-
-
