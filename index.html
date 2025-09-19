@@ -7,7 +7,8 @@
   <meta name="color-scheme" content="dark light" />
   <title>Patha Sudeepthi</title>
   <link rel="stylesheet" href="style.css">
-  
+
+
   <!-- Open Graph / SEO -->
   <meta property="og:title" content="Patha Sudeepthi" /> 
   <meta property="og:description" content="Projects, skills, and experience." /> 
@@ -53,7 +54,7 @@
         <p class="subtitle">I build practical software and hardware solutions as a Front-end Web and Android developer, turning ideas into results.</p>
         <div class="hero-cta">
           <a class="btn" href="https://github.com/PathaSudeepthi">View Projects</a>
-          <a class="btn" href="images/resume sample.pdf" download>Download Resume</a>
+          <a class="btn" href="images/Resume.pdf" download>Download Resume</a>
         </div>
       </div>
       <div class="portrait">
@@ -87,30 +88,31 @@
       <p class="section-desc">Core tools and technologies I use regularly.</p>
       <div class="card">
         <div class="chips" aria-label="Skill list">
-          <span class="chip">Java</span>
           <span class="chip">HTML</span>
           <span class="chip">CSS</span>
           <span class="chip">JavaScript</span>
           <span class="chip">Arduino IDE</span>
+          <span class="chip">Java</span>
           <span class="chip">DBMS</span>
           <span class="chip">SQL</span>
-          <span class="chip">GitHUb</span>
+          <span class="chip">Git</span>
         </div>
       </div>
     </section>
 
     <!-- Projects -->
-<section id="projects" aria-labelledby="projects-title">
+    <section id="projects" aria-labelledby="projects-title">
       <h2 id="projects-title" class="section-title">Selected Projects</h2>
       <p class="section-desc">A quick tour of things I loved building.</p>
       <div class="grid grid-2">
         <article class="card project">
-          <img src="Home_pic.png" alt="Screenshot of Cinemaze Reviews" />              <div>
-            <h3>Cinemaze Reviews</h3>
+          <img src="images/RestaurantReservation.png" alt="Screenshot of Cinemaze Reviews" />
+          <div>
+            <h3>Restaurant Reservation Management System</h3>
             <p class="muted">Web platform for multilingual movie browsing, searching, reviewing, rating, and saving favorites.</p>
-            <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+            <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span></div>
             <div class="project-links">
-              <a class="btn" href="https://github.com/PathaSudeepthi/Cinemaze_Reviews.git" target="_blank">GitHub</a>
+              <a class="btn" href="https://github.com/PathaSudeepthi/Cinemaze_Reviews.git%22" target="_blank">GitHub</a>
             </div>
           </div>
         </article>
@@ -145,17 +147,27 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title" class="section-title">Contact</h2>
-      <p class="section-desc">Have a question? Email <a href="mailto:pathasudeepthi538@gmail.com">pathasudeepthi538@gmail.com</a>.</p>
-      <form id="contactForm" action="https://formspree.io/f/mldlqnyd" method="POST">
-        <label><span class="muted">Your name</span><input type="text" name="name" required /></label>
-        <label><span class="muted">Email</span><input type="email" name="email" required /></label>
-        <label><span class="muted">Message</span><textarea name="message" required></textarea></label>
-        <button class="btn" type="submit">Send message</button>
-        <p id="formStatus" class="muted" role="status"></p>
-      </form>
-    </section>
+    <section id="contact">
+  <h2>Contact Me</h2>
+  <form id="contactForm" action="https://formspree.io/f/mldlqnyd" method="POST">
+    <label>
+      <span>Your Name</span>
+      <input type="text" name="name" required />
+    </label>
+    <label>
+      <span>Email</span>
+      <input type="email" name="email" required />
+    </label>
+    <label>
+      <span>Message</span>
+      <textarea name="message" required></textarea>
+    </label>
+
+    <button class="btn" type="submit">Send Message</button>
+    <p id="formStatus"></p>
+  </form>
+</section>
+
   </main>
 
   <footer class="container">
@@ -173,9 +185,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
