@@ -110,9 +110,10 @@ section { padding: 52px 0; }
 .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .grid-2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
+
 
 
 .card {
@@ -125,8 +126,18 @@ section { padding: 52px 0; }
 .muted { color: var(--muted); }
 
 /* Project card */
-.project { display: grid; grid-template-columns: 140px 1fr; gap: 16px; align-items: start; }
-.project img { width: 140px; height: 100px; object-fit: cover; }
+.project {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.project img {
+  width: 140px;
+  height: 100px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
 .project-links { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
 
 /* Skills chips */
@@ -155,4 +166,5 @@ footer { padding: 36px 0 56px; color: var(--muted); font-size: .95rem; }
   .grid-2 { grid-template-columns: 1fr; }
   .project { grid-template-columns: 1fr; }
 }
+
 
