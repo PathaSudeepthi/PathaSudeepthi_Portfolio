@@ -111,12 +111,16 @@ section { padding: 52px 0; }
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px; /* this adds space between cards */
+  gap: 30px; /* creates space between project cards */
 }
 
+
+
 .card {
-  width: 100%;
-  box-sizing: border-box;
+  background: linear-gradient(180deg, color-mix(in oklab, var(--surface), transparent 5%), color-mix(in oklab, var(--bg), transparent 5%));
+  border: 1px solid color-mix(in oklab, var(--muted), transparent 60%);
+  border-radius: var(--radius);
+  padding: 18px; box-shadow: var(--shadow);
 }
 
 .card h3 { margin: 8px 0 8px; font-size: 1.05rem; }
@@ -164,6 +168,7 @@ footer { padding: 36px 0 56px; color: var(--muted); font-size: .95rem; }
   .grid-2 { grid-template-columns: 1fr; }
   .project { grid-template-columns: 1fr; }
 }
+
 
 
 
