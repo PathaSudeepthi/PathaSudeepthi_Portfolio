@@ -49,7 +49,7 @@
    ⭐ ADDED: PROFILE IMAGE FITTING CODE
    ================================================== */
 
-.profile-image {
+.portrait {
   width: 320px;
   height: 320px;
   border-radius: 50%;
@@ -62,7 +62,7 @@
   box-shadow: 0 0 35px rgba(0, 150, 255, 0.35);
 }
 
-.profile-image img {
+.portrait img {
   width: 100%;
   height: 100%;
   object-fit: cover;
