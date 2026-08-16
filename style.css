@@ -34,3 +34,4 @@ section { padding: 52px 0; }
   border: 1px solid color-mix(in oklab, var(--muted), transparent 60%);
   border-radius: var(--radius);
   padding: 18px; box-shadow: var(--shadow);
+}
