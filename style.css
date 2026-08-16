@@ -1,0 +1,36 @@
+/* =========================
+   ========================= */
+.hero { display: grid; grid-template-columns: 1.2fr .8fr; gap: 32px; align-items: center; padding: 56px 0 36px; }
+.kicker { color: var(--muted); font-weight: 600; letter-spacing: .24em; text-transform: uppercase; font-size: .8rem; }
+.title { font-size: clamp(2rem, 3.4vw + .6rem, 3.6rem); line-height: 1.1; margin: 12px 0; font-weight: 800; }
+.subtitle { font-size: clamp(1rem, .8vw + .6rem, 1.25rem); color: var(--muted); }
+.hero-cta { display: flex; gap: 12px; margin-top: 22px; flex-wrap: wrap; }
+
+.portrait { aspect-ratio: 3 / 5; border-radius: 24px; overflow: hidden; border: 1px solid color-mix(in oklab, var(--muted), transparent 60%); box-shadow: var(--shadow); }
+
+.highlight {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* =========================
+   Section base
+   ========================= */
+section { padding: 52px 0; }
+.section-title { font-size: clamp(1.25rem, .8vw + 1rem, 1.6rem); margin: 0 0 16px; }
+.section-desc { color: var(--muted); margin: 0 0 28px; }
+
+/* =========================
+   Cards and grids
+   ========================= */
+.grid { display: grid; gap: 18px; }
+.grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+.card {
+  background: linear-gradient(180deg, color-mix(in oklab, var(--surface), transparent 5%), color-mix(in oklab, var(--bg), transparent 5%));
+  border: 1px solid color-mix(in oklab, var(--muted), transparent 60%);
+  border-radius: var(--radius);
+  padding: 18px; box-shadow: var(--shadow);
